@@ -1,2 +1,1 @@
-# itch.io_css
-Repo of custom CSS for my itch pages
+[Visit my page here](https://charles-masse.itch.io/)
