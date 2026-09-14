@@ -1,0 +1,24 @@
+.view_game_page h1 {
+    font-size: 45px;
+}
+
+.view_game_page h1, .view_game_page h2, .view_game_page p, .view_game_page li, .view_game_page a:not(.button) {
+    color: #e4e2dd !important;
+    text-shadow: 2.5px 0.5px 0px #0041cf, -2.5px -0.5px 0px #ab0000;
+}
+
+.view_game_page .button {
+    box-shadow: 2.5px 1.5px 0px #0041cf, -2.5px -1.5px 0px #ab0000 !important;
+}
+
+#download:before {
+    content:"ダウンロード ";
+}
+
+.game_comments_widget h2:before {
+    content:"コメント ";
+}
+
+.custom-japanese:before {
+    content: "収録内容 ";
+}

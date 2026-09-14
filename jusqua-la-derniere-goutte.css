@@ -1,0 +1,26 @@
+#wrapper .button {
+    box-shadow: 0px 3.5px 3px darkred !important
+}
+
+[alt="SPLAT"]:hover {
+    background: url(https://www.freeiconspng.com/uploads/blood-png-transparent-image-18.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.custom-blood {
+    color: #b94746 !important;
+}
+
+.custom-black {
+    color: black !important;
+}
+/*preload image*/
+#wrapper::after{
+    position:absolute;
+    width:0;
+    height:0;
+    overflow:hidden;
+    z-index:-1;
+    content: url(https://www.freeiconspng.com/uploads/blood-png-transparent-image-18.png);
+}

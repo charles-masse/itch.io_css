@@ -1,0 +1,32 @@
+[data-label="game:3693387:title"] {
+    color: #FFFF00 !important;
+}
+
+[data-label="game:3075327:title"] {
+    color: #e4e2dd !important;
+    text-shadow: 2.5px 0.5px 0px #0041cf, -2.5px -0.5px 0px #ab0000;
+}
+
+[data-label="game:3689531:title"] {
+    color: red !important;
+    text-shadow: 0px 3.5px 3px darkred
+}
+
+a[href="https://itch.io/c/6222825/franais"]::before {
+    content: url("https://flagcdn.com/24x18/fr.png");
+    margin-right: 6px;
+}
+
+[data-game_id="3689531"], [data-game_id="3693387"] {
+  position: relative !important;
+}
+
+[data-game_id="3689531"]::before, [data-game_id="3693387"]::before {
+  content: "🥇";
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 69;
+  pointer-events: none;
+}

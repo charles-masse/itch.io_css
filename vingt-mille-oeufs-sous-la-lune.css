@@ -1,0 +1,8 @@
+#wrapper h1, #wrapper h2, #wrapper h4 {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.custom-hl {
+    color: #00FFFF !important;
+}
