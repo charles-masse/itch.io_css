@@ -38,6 +38,7 @@
     animation: none !important;
 }
 
+.custom-dorf,
 .custom-grid0,
 .custom-grid1,
 .custom-grid2,
@@ -49,6 +50,7 @@
     position: relative;
 }
 
+.custom-dorf::after,
 .custom-grid0::after,
 .custom-grid1::after,
 .custom-grid2::after,
@@ -140,8 +142,19 @@
 }
 
 .user_page:has([data-game_id="3689531"]:hover)
-:is(.custom-dorf, .custom-grid0, .custom-grid4, .custom-grid6) {
-    background-color: red;
+:is(.custom-dorf) {
+    visibility: hidden;
+}
+
+.user_page:has([data-game_id="3689531"]:hover)
+:is(.custom-dorf)::after {
+    content: "·";
+    background-color: #800000;
+}
+
+.user_page:has([data-game_id="3689531"]:hover)
+:is(.custom-grid0, .custom-grid4, .custom-grid6) {
+    background-color: #800000;
 }
 
 /* Emojis */
