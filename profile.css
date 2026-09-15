@@ -185,8 +185,11 @@ a[href="https://itch.io/c/6222825/franais"]::before {
     color: #000;
     font-weight: bold;
     position: absolute;
-    top: 20px;
+    display: flex;
+    height: 53px;
+    top: 0px;
     left: 50px;
+    align-items: center;
     z-index: 69;
     text-shadow:
         -1px -1px 0 #fff,  
