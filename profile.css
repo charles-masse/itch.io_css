@@ -157,12 +157,13 @@
     background-color: #800000;
 }
 
-/* Emojis */
+/* Flags */
 a[href="https://itch.io/c/6222825/franais"]::before {
     content: url("https://flagcdn.com/24x18/fr.png");
     margin-right: 6px;
 }
 
+/* Prices */
 [data-game_id="3689531"],
 [data-game_id="3693387"] {
         position: relative !important;
@@ -177,4 +178,27 @@ a[href="https://itch.io/c/6222825/franais"]::before {
         left: 0;
         z-index: 69;
         pointer-events: none;
+}
+
+[data-game_id="3689531"]:hover::after,
+[data-game_id="3693387"]:hover::after {
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 69;
+    text-shadow:
+        -1px -1px 0 #fff,  
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+}
+
+[data-game_id="3689531"]:hover::after {
+    content: "FabuJam 2025";
+}
+
+[data-game_id="3693387"]:hover::after {
+    content: "Donjons Critiques 2022";
 }
