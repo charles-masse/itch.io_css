@@ -1,12 +1,18 @@
-.user_page .text_header > h1 {
-    font-size: 0;
-    margin: 0;
-}
-
-/* Bio */
 @font-face {
     font-family: "dorf";
     src: url("https://raw.githubusercontent.com/charles-masse/itch.io_css/main/assets/PxPlus_IBM_VGA_9x16.ttf") format("truetype");
+}
+/* itch */
+.link_group:first-child {
+    visibility: hidden;
+    font-size: 0;
+    width: 0;
+}
+
+/* Bio */
+.user_page .text_header > h1 {
+    font-size: 0;
+    margin: 0;
 }
 
 .user_profile {
@@ -163,7 +169,7 @@ a[href="https://itch.io/c/6222825/franais"]::before {
     margin-right: 6px;
 }
 
-/* Prices */
+/* Awards */
 [data-game_id="3689531"],
 [data-game_id="3693387"] {
         position: relative !important;
