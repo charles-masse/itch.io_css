@@ -3,25 +3,22 @@
     src: url("https://raw.githubusercontent.com/charles-masse/itch.io_css/main/assets/PxPlus_IBM_VGA_9x16.ttf") format("truetype");
 }
 /* itch */
-.link_group:first-child {
-    visibility: hidden;
+.text_header, .link_group:first-child {
     font-size: 0;
+    visibility: hidden;
+    margin: 0;
     width: 0;
 }
 
 /* Bio */
-.user_page .text_header > h1 {
-    font-size: 0;
-    margin: 0;
-}
-
 .user_profile {
-    font-family: 'dorf', monospace;
     font-size: 2em !important;
+    font-family: 'dorf', monospace;
 }
 
 .custom-blink {
-        animation: blink-sharp 1s steps(1, start) infinite;
+    animation: blink-sharp 1s steps(1, start) infinite;
+    display: flex;
 }
 
 @keyframes blink-sharp {
@@ -79,6 +76,9 @@
 
 .user_page:has([data-game_id="3693387"]:hover) .custom-blink::before {
     content: "run vingt-mille-oeufs-sous-la-lune.jdr";
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
 }
 
 .user_page:has([data-game_id="3693387"]:hover)
@@ -109,6 +109,9 @@
 
 .user_page:has([data-game_id="3075327"]:hover) .custom-blink::before {
     content: "run najustez-pas-votre-vision.jdr";
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
 }
 
 .user_page:has([data-game_id="3075327"]:hover)
@@ -145,6 +148,9 @@
 
 .user_page:has([data-game_id="3689531"]:hover) .custom-blink::before {
     content: "run jusqua-la-derniere-goutte.jdr";
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
 }
 
 .user_page:has([data-game_id="3689531"]:hover)
@@ -202,6 +208,7 @@ a[href="https://itch.io/c/6222825/franais"]::before {
         1px -1px 0 #fff,
         -1px  1px 0 #fff,
         1px  1px 0 #fff;
+    pointer-events: none;
 }
 
 [data-game_id="3689531"]:hover::after {
