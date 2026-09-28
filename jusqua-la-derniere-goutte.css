@@ -3,7 +3,7 @@
 }
 
 [alt="SPLAT"]:hover {
-    background: url(https://www.freeiconspng.com/uploads/blood-png-transparent-image-18.png);
+    background: url(https://raw.githubusercontent.com/charles-masse/itch.io_css/main/assets/splat.png);
     background-position: center;
     background-size: contain;
 }
@@ -22,5 +22,5 @@
     height:0;
     overflow:hidden;
     z-index:-1;
-    content: url(https://www.freeiconspng.com/uploads/blood-png-transparent-image-18.png);
+    content: url(https://raw.githubusercontent.com/charles-masse/itch.io_css/main/assets/splat.png);
 }
